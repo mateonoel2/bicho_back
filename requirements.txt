@@ -58,7 +58,6 @@ tensorflow
 tensorflow-estimator
 tensorflow-hub
 tensorflow-io-gcs-filesystem
-tensorflow-macos
 termcolor
 tf-keras
 typing_extensions
