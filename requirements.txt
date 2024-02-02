@@ -1,4 +1,5 @@
 Flask
 Flask-Cors
+tensorflow
 tensorflow-hub
 gunicorn
