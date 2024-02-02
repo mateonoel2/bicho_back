@@ -3,3 +3,5 @@ Flask-Cors
 tensorflow
 tensorflow-hub
 gunicorn
+opencv-python
+pillow
