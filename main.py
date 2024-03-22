@@ -11,7 +11,7 @@ from flask_cors import cross_origin
 app = Flask(__name__)
 
 # Load the pre-trained model
-modelo = tf.keras.models.load_model("detectar_picadura.h5", custom_objects={'KerasLayer': hub.KerasLayer})
+modelo = tf.keras.models.load_model("modelo_mejorado.h5", custom_objects={'KerasLayer': hub.KerasLayer})
 
 def categorize(url):
     response = requests.get(url)
@@ -33,7 +33,7 @@ def predict():
             prediction = categorize(image_url)
 
             # Map predictions to corresponding classes
-            classes = ["Abeja", "Alergia", "Araña", "Garrapata", "Mosquito"]
+            classes = ["No fire", "Fire"]
             insect = classes[prediction]
 
             return jsonify({"insect": insect})
